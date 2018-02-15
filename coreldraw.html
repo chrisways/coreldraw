@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+</head>
+
+<body>
+<center>
+<canvas id="mycanvas" width="1000" height="400" style="border:1px solid #00FF00; background-color:#999">
+</canvas></center>
+<script>
+	
+	var c = document.getElementById("mycanvas");
+	var pencil = c.getContext("2d");
+	pencil.moveTo(140,100);
+	pencil.lineTo(241,100);
+	pencil.stroke();
+	pencil.moveTo(140,100);
+	pencil.lineTo(241,-2000);
+	pencil.stroke();
+	pencil.beginPath();
+pencil.arc(140,100,100,0,2*Math.PI);
+pencil.stroke();
+pencil.fillText("Radius",160,95); 
+</script>
+</body>
+</html>
